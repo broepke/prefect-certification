@@ -27,7 +27,7 @@ if __name__ == "__main__":
         source="https://github.com/broepke/prefect-certification.git",
         entrypoint="test_task_flow_order.py:my_flow",
     ).deploy(
-        name="my-first-managed-deployment",
+        name="double-plus-two",
         work_pool_name="dka-managed",
         parameters={"z": 11},
     )
