@@ -24,8 +24,9 @@ def my_flow():
 
 if __name__ == "__main__":
     my_flow.from_source(
-        source="https://github.com/prefecthq/pacc-2024-v6.git",
-        entrypoint="test_task_flow_order-tasks.py:pipeline",
+        source="https://github.com/broepke/prefect-certification.git",
+        entrypoint="test_task_flow_order-tasks.py:my_flow",
+        parameters={"z": 11},
     ).deploy(
         name="my-first-managed-deployment",
         work_pool_name="dka-managed",
