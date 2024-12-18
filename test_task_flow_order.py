@@ -17,8 +17,8 @@ def double_plus_two(z):
     return b
 
 @flow(log_prints=True)
-def my_flow():
-    res = double_plus_two(10)
+def my_flow(input_number):
+    res = double_plus_two(input_number)
     print("The final number is:", res)
 
 
@@ -29,5 +29,5 @@ if __name__ == "__main__":
     ).deploy(
         name="double-plus-two",
         work_pool_name="dka-managed",
-        parameters={"z": 11},
+        parameters={"input_number": 11},
     )
