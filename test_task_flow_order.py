@@ -25,7 +25,7 @@ def my_flow():
 if __name__ == "__main__":
     my_flow.from_source(
         source="https://github.com/broepke/prefect-certification.git",
-        entrypoint="test_task_flow_order-tasks.py:my_flow",
+        entrypoint="test_task_flow_order.py:my_flow",
     ).deploy(
         name="my-first-managed-deployment",
         work_pool_name="dka-managed",
