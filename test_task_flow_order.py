@@ -29,5 +29,5 @@ if __name__ == "__main__":
     ).deploy(
         name="my-first-managed-deployment",
         work_pool_name="dka-managed",
-        # parameters={"z": 11},
+        parameters={"z": 11},
     )
